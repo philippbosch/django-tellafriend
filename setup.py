@@ -12,7 +12,7 @@ setup(
     description = "Tell-a-friend functionality for Django-based websites",
     license = "MIT",
     keywords = "django tellafriend recommend",
-    url = "http://pb.io/projects/django-tellafriend/",
+    url = "http://github.com/philippbosch/django-tellafriend/",
     packages=find_packages(),
     package_data={
         'tellafriend': [
