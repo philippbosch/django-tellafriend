@@ -1,0 +1,6 @@
+*.pyc
+MANIFEST
+build
+dist
+django_tellafriend.egg-info/
+docs/_build

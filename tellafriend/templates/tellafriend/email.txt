@@ -1,0 +1,7 @@
+{% load i18n %}{% trans "Recommendation"|upper %}
+
+{% filter wordwrap 72 %}{% blocktrans with email_sender as email_sender %}{{ email_sender }} recommends this page to you:{% endblocktrans %}{% endfilter %}
+
+    {{ url }}
+
+{% if message %}{{ message|wordwrap:72 }}{% endif %}

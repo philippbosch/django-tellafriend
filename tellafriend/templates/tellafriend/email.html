@@ -1,0 +1,5 @@
+{% load i18n %}
+<h1>{% trans "Recommendation" %}</h1>
+<p>{% blocktrans with email_sender as email_sender %}{{ email_sender }} recommends this page to you:{% endblocktrans %}</p>
+<p><a href="{{ url }}" style="color: #0091C8;">{{ url }}</a></p>
+{% if message %}<p>{{ message|linebreaks }}</p>{% endif %}

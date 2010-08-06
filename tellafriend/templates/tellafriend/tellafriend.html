@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <h1>{% trans "Recommend" %}</h1>
+    <p>{% trans "Please enter your and the recipient's e-mail address, and an optional message." %}</p>
+        <form method="post" action="">
+            <fieldset>
+                <div class="row">
+                    {{ tellafriend_form.url.label_tag }}
+                    <a href="{{ form.url.field.initial }}">{{ form.url.field.initial }}</a>
+                    {{ tellafriend_form.url }}
+                    {{ tellafriend_form.url.errors }}
+                </div>
+                <div class="row">
+                    {{ tellafriend_form.email_sender.label_tag }}
+                    {{ tellafriend_form.email_sender }}
+                    {{ tellafriend_form.email_sender.errors }}
+                </div>
+                <div class="row">
+                    {{ tellafriend_form.email_recipient.label_tag }}
+                    {{ tellafriend_form.email_recipient }}
+                    {{ tellafriend_form.email_recipient.errors }}
+                </div>
+                <div class="row">
+                    {{ tellafriend_form.message.label_tag }}
+                    {{ tellafriend_form.message }}
+                    {{ tellafriend_form.message.errors }}
+                </div>
+                <div class="row">
+                    <label for="id_captcha">{{ tellafriend_form.captcha.help_text }}</label>
+                    {{ tellafriend_form.captcha }}
+                    {{ tellafriend_form.captcha.errors }}
+                </div>
+                <input type="submit" value="{% trans "Send" %}">
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}
