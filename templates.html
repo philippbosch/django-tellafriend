@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Templates &mdash; django-tellafriend v0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="django-tellafriend v0.0.1 documentation" href="index.html" />
+    <link rel="prev" title="Configuration" href="configuration.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">django-tellafriend v0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="templates">
+<h1>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h1>
+<p>django-tellafriend comes with four templates which are ready for use but can also be overwritten by you. In order to do that create a directory called <tt class="docutils literal"><span class="pre">tellafriend</span></tt> in your main <tt class="docutils literal"><span class="pre">templates</span></tt> directory and place files there with the names below:</p>
+<div class="section" id="tellafriend-tellafriend-html">
+<h2><tt class="docutils literal"><span class="pre">tellafriend/tellafriend.html</span></tt><a class="headerlink" href="#tellafriend-tellafriend-html" title="Permalink to this headline">¶</a></h2>
+<p>This is the main template that renders the form for the tell-a-friend functionality. The template context will contain two variables:</p>
+<dl class="docutils">
+<dt>tellafriend_form</dt>
+<dd>An instance of <tt class="docutils literal"><span class="pre">tellafriend.forms.TellAFriendForm</span></tt>.</dd>
+<dt>tellafriend_url</dt>
+<dd>The URL that will be send to the recipient.</dd>
+</dl>
+</div>
+<div class="section" id="tellafriend-success-html">
+<h2><tt class="docutils literal"><span class="pre">tellafriend/success.html</span></tt><a class="headerlink" href="#tellafriend-success-html" title="Permalink to this headline">¶</a></h2>
+<p>A simple success confirmation.</p>
+</div>
+<div class="section" id="tellafriend-email-html">
+<span id="template-email-html"></span><h2><tt class="docutils literal"><span class="pre">tellafriend/email.html</span></tt><a class="headerlink" href="#tellafriend-email-html" title="Permalink to this headline">¶</a></h2>
+<p>This file is used to render the HTML version of the e-mail that is sent out to the recipient. The template context contains all of the form variables.</p>
+</div>
+<div class="section" id="tellafriend-email-txt">
+<h2><tt class="docutils literal"><span class="pre">tellafriend/email.txt</span></tt><a class="headerlink" href="#tellafriend-email-txt" title="Permalink to this headline">¶</a></h2>
+<p>Same as <a class="reference internal" href="#template-email-html"><em>tellafriend/email.html</em></a> but used to render the plain text version of the e-mail.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Templates</a><ul>
+<li><a class="reference internal" href="#tellafriend-tellafriend-html"><tt class="docutils literal"><span class="pre">tellafriend/tellafriend.html</span></tt></a></li>
+<li><a class="reference internal" href="#tellafriend-success-html"><tt class="docutils literal"><span class="pre">tellafriend/success.html</span></tt></a></li>
+<li><a class="reference internal" href="#tellafriend-email-html"><tt class="docutils literal"><span class="pre">tellafriend/email.html</span></tt></a></li>
+<li><a class="reference internal" href="#tellafriend-email-txt"><tt class="docutils literal"><span class="pre">tellafriend/email.txt</span></tt></a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="configuration.html"
+                        title="previous chapter">Configuration</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/templates.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             >previous</a> |</li>
+        <li><a href="index.html">django-tellafriend v0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2010, Philipp Bosch.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.
+    </div>
+  </body>
+</html>
