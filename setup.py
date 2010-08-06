@@ -16,8 +16,9 @@ setup(
     packages=find_packages(),
     package_data={
         'tellafriend': [
-            'templates/tellafriend/*',
-        ]
+            'templates/tellafriend/*.html',
+            'templates/tellafriend/*.txt',
+        ],
     },
     long_description=read('README'),
     classifiers=[
