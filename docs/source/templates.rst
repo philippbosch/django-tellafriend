@@ -11,8 +11,11 @@ This is the main template that renders the form for the tell-a-friend functional
 tellafriend_form
     An instance of ``tellafriend.forms.TellAFriendForm``.
 
+tellafriend_full_url
+    The URL that shall be recommended.
+
 tellafriend_url
-    The URL that will be send to the recipient.
+    The local part of the URL that shall be recommended – everything after ``http://servername``.
 
 
 ``tellafriend/success.html``

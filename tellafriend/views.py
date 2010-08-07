@@ -26,9 +26,11 @@ def tellafriend(request):
         form = TellAFriendForm()
     
     if request.REQUEST.has_key('url'):
-        url = 'http://%s%s' % (Site.objects.get_current().domain, request.REQUEST['url'])
+        url = request.REQUEST['url']
     else:
-        url = 'http://%s' % (Site.objects.get_current().domain,)
+        url = ''
+    full_url = 'http://%s%s' % (Site.objects.get_current().domain, url)
+    
     
     form.fields['url'].initial = url
-    return render_to_response('tellafriend/tellafriend.html', {'tellafriend_form': form, 'tellafriend_url': url}, context_instance=RequestContext(request))
+    return render_to_response('tellafriend/tellafriend.html', {'tellafriend_form': form, 'tellafriend_url': url, 'tellafriend_full_url': full_url}, context_instance=RequestContext(request))
