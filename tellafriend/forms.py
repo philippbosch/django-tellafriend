@@ -10,7 +10,7 @@ except ImportError:
 
 
 class TellAFriendForm(forms.Form):
-    url = forms.URLField(label=_("URL"), widget=forms.HiddenInput)
+    url = forms.CharField(max_length=200, label=_("URL"), widget=forms.HiddenInput)
     email_sender = forms.EmailField(max_length=100, label=_("Sender"))
     email_recipient = forms.EmailField(max_length=100, label=_("Recipient"))
     message = forms.CharField(required=False, widget=forms.Textarea, label=_("Message"))
