@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-07 13:57+0200\n"
+"POT-Creation-Date: 2010-08-07 14:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Philipp Bosch <hello@pb.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,13 @@ msgstr "Nachricht"
 
 #: forms.py:17
 msgid "Please enter the characters shown in the image in the field next to it."
-msgstr "Bitte geben Sie die in der Grafik zu sehenden Zeichen in das Feld daneben ein."
+msgstr ""
+"Bitte geben Sie die in der Grafik zu sehenden Zeichen in das Feld daneben "
+"ein."
+
+#: forms.py:17
+msgid "Captcha"
+msgstr "Sicherheitscheck"
 
 #: views.py:34
 #, python-format
@@ -66,8 +72,8 @@ msgid ""
 "Please enter your and the recipient's e-mail address, and an optional "
 "message."
 msgstr ""
-"Bitte geben Sie Ihre E-Mail-Adresse und die des Empfängers ein, und, wenn Sie "
-"möchten, auch eine optionale Nachricht."
+"Bitte geben Sie Ihre E-Mail-Adresse und die des Empfängers ein, und, wenn "
+"Sie möchten, auch eine optionale Nachricht."
 
 #: templates/tellafriend/tellafriend.html:35
 msgid "Send"
