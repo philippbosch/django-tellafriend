@@ -18,6 +18,7 @@ setup(
         'tellafriend': [
             'templates/tellafriend/*.html',
             'templates/tellafriend/*.txt',
+            'locale/*/LC_MESSAGES/*',
         ],
     },
     long_description=read('README'),
