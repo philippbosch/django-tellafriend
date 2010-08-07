@@ -26,7 +26,7 @@ def tellafriend(request):
             email_context = request.POST.copy()
             email_context.update({
                 'url': url,
-                'full_url', full_url,
+                'full_url': full_url,
             })
             
             text_content = render_to_string('tellafriend/email.txt', email_context, context_instance=RequestContext(request))
