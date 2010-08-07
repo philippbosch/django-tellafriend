@@ -29,7 +29,7 @@ A simple success confirmation.
 ``tellafriend/email.html``
 --------------------------
 
-This file is used to render the HTML version of the e-mail that is sent out to the recipient. The template context contains all of the form variables.
+This file is used to render the HTML version of the e-mail that is sent out to the recipient. The template context contains all of the form variables as well as ``full_url`` and ``url``.
 
 
 ``tellafriend/email.txt``
